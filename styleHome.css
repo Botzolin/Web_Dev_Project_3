@@ -1,0 +1,29 @@
+
+table {
+  width: 90%;
+  margin-left: 20px;
+  border-collapse: collapse; /* elimină spatii celule */
+  font-family: Arial, sans-serif;
+  font-size: 1rem;
+  text-align: left;
+  background-color: white;
+  border-radius: 20px;
+  overflow: hidden;
+}
+
+th {
+  background-color: #00A8B5; 
+  color: white;
+  font-weight: bold;
+  padding: 12px 15px;
+}
+
+td {
+  padding: 12px 15px;
+  border-bottom: 1px solid #ddd;
+}
+
+
+
+
+

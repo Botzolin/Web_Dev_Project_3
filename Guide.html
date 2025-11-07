@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="styleGuide.css">
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatibles' content='IE=edge'>
+    <title>ArduFun/Guide</title>
+</head>
+<body>
+
+    <header>
+        <div> 
+            <a href="index.html"  class="active"><img src="assets/ardufunLogo.png" class="logo"></a>
+        </div>
+        
+        <input type="checkbox" id="menu-toggle" hidden>
+
+        <label for="menu-toggle" class="hamburger">☰</label>
+
+
+        <nav class="navBar">
+            <a href="history.html" >How did we get here?</a>
+            <a href="Guide.html" class="active" >Guide</a>
+            <a href="people.html" >Notable People</a>
+        </nav>
+    </header>
+
+    <h2>Start your journey</h2>
+    <p>The most popular Arduino board is the Arduino UNO R3. This guide will help you understand the basics of the board while also preparing you for your firs project. For the project you should have an Arduino UNO R3, some jumper cables, a breadboard, a 220 Ohm resistor and a simple LED.</p>
+
+    <h2>Knowing your Board</h2>
+    <p>The next two slides will introduce you to the Arduino R3.</p>
+    <p>The first thing that stands out in the first slide is the black rectangle on the bottom-right side of the board. That is the <em>ATmega328P</em> microcontroller. The 8-bit microcontroller is the "brain" of the board. That means it runs your code and transforms inputs into outputs as needed. The inputs can be determined by you, but in most cases the inputs represent signals that come from sensors.</p>
+    <p> Now, you may wonder : how can I manage inputs and outputs? The answer is by using the digital and analog pins, which are located on the top and bottom margin as shown in the picture. The ones on top are called digital pins and they have two states : HIGH and LOW. The bottom pins are analog and they can have values between 0-1023.</p>
+    <p>If you want, you can study the second slide for a better understanding of the components, as they have many more functions. </p>
+
+    
+    <div class="container">
+        <details style="font-size: 15px; margin-left: 20px;">
+            <ul>
+                <li>Microcontroller: ATmega328P</li>
+                <li>USB connector: USB-B</li>
+                <li>Digital I/O Pins: 14</li>
+                <li>Analog input pins: 6</li>
+                <li>I2C: YES</li>
+                <li>I/O Voltage: 5V</li>
+                <li>DC Current per I/O Pin: 20mA</li>
+                <li>Clock speed: 16 MHz</li>
+            </ul>
+        </details>
+        <ul class="slides">
+            <li id="slide1">
+                <img src="assets/arduinoR3.png" alt="Arduino Uno board">
+            </li>
+            <li id="slide2">
+                <img src="assets/arduino_pinout.png" alt="Arduino pinout">
+            </li>
+        </ul>
+
+
+        <ul class="thumbnail">
+            <li><a href="#slide1"><img src="assets/arduinoR3.png" alt="Arduino Uno board"></a></li>
+            <li><a href="#slide2"><img src="assets/arduino_pinout.png" alt="Arduino pinout"></a></li>    
+        </ul>
+    </div>
+    
+
+<h2>Your first project</h2>
+<p>Now that you know the basics of the Arduino board, it is time to make your first project. We will make a simple circuit that turns on a LED. Follow the steps below:</p>
+<div class="container2">
+    <ol>
+      <li>Begin by installing the Arduino IDE from the link: 
+        <a href="https://www.arduino.cc/en/software/" target="_blank">arduino.cc/en/software</a>
+      </li>
+      <li>Open the app and create a new project.</li>
+      <li>Now we will make a simple circuit that turns on a LED. Follow the schematic in the next image.</li>
+      <p><strong>⚠️ Be careful:</strong> connect the anode (longer leg) of the LED to digital pin 2 and the cathode (shorter leg) to GND (-).</p>
+      <li>Then copy the following code into your new project.</li>
+      <p>The code defines pin 2 as “Led_Pin”. In <code>void setup()</code> we set it as OUTPUT, which means it delivers 5V to the LED. Because we used a 220Ω resistor, the LED won’t burn out.</p>
+      <li>Connect the Arduino to your computer and upload the code. The LED should light up!</li>
+    </ol>
+  
+
+    <ul>
+      <li></li><img src="assets/circuit.png" class = "imagine_mare"></li>
+      <li><img src="assets/cod.png" class = "imagine_mare"></li>
+    </ul>
+</div>
+
+<h2>Conclusion</h2>
+<p>Now that you made your first project, feel free to use other components and sensors to help make your ideas a reality. Here is a demonstration video of a simple radar project:</p>
+
+<div class="video-frame">
+  <video controls>
+    <source src="assets/filmulet.mp4" type="video/mp4">
+    Your browser does not support the video tag.
+  </video>
+</div>
+
+</body>
+</html>

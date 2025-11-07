@@ -1,0 +1,81 @@
+
+table {
+  width: 90%;
+  margin: 2rem auto;
+  border-collapse: collapse;        
+  background-color: #0d2438;       
+  color: #AEECEF;                   
+  border: 2px solid #AEECEF;      
+  border-radius: 12px;
+  overflow: hidden;           
+  box-shadow: 0 0 20px rgba(0, 255, 255, 0.1);
+}
+
+/*header */
+thead th {
+  background-color: #092033;        
+  color: #AEECEF;
+  font-size: 20px;
+  font-weight: bold;
+  padding: 1rem;
+  text-align: center;
+  border-bottom: 2px solid #AEECEF;
+}
+
+/*celula*/
+tbody td {
+  padding: 1rem;
+  border-bottom: 1px solid rgba(174, 236, 239, 0.2);
+  text-align: center;
+  vertical-align: middle;
+}
+
+/* efect pt randuri */
+tbody tr:hover {
+  background-color: rgba(174, 239, 198, 0.05);
+  transition: background-color 0.3s ease;
+}
+
+/* linkuri */
+td a {
+  color: #AEECEF;
+  text-decoration: none;
+  font-weight: bold;
+}
+td a:hover {
+  color: #00ffff;
+  text-decoration: underline;
+}
+
+/* imagini */
+td img {
+  display: block;
+  margin-inline: auto;
+  width: 120px;                  
+  height: 120px;                 
+  object-fit: cover;             
+  object-position: center; 
+  
+  border: 2px solid #AEECEF;
+  border-radius: 10px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+td img:hover {
+  transform: scale(1.05);
+  box-shadow: 0 0 20px rgba(0,255,255,0.3);
+}
+
+/* liste */
+td ul {
+  list-style-type: disc;
+  margin-left: 1.5rem;
+  text-align: left;
+  font-size: 0.95em;
+}
+
+td p{
+    color: #AEECEF;
+}
+
+
